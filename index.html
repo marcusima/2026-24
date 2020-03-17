@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - 2026-4</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+<style>
+#counter{
+  font-size:75px;
+}
+
+div {
+  background:yellow;
+  border-style: solid;
+}
+
+span {
+  background:red;
+}
+
+.stats{
+  font-size:150%;
+  background:green;
+}
+</style>
+</head>
+<body translate="no">
+<div class="container">
+<div class="row">
+<div class="stats" id="counter">100</div>
+<div>Score: <span class="stats">100</span></div>
+</div>
+<div class="row">
+<div class="col">
+column 1
+</div>
+<div class="col">
+column 2
+</div>
+</div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script id="rendered-js">
+console.clear();
+
+function countdown(evt) {
+  let counter = $("#counter").text();
+  counter = counter - 1;
+  $("#counter").text(counter);
+}
+setInterval(countdown,1000)
+    </script>
+</body>
+</html>
